@@ -17,4 +17,8 @@ public class Produto {
         System.out.println("Tipo do produto: "+tipoProduto);
     }
 
+    public boolean produtoValido(){
+        return !nome.equals(nome) && preco > 0 && nome != null;
+    }
+
 }
