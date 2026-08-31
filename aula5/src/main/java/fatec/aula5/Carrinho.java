@@ -44,6 +44,22 @@ public class Carrinho {
         }
 
         carrinho[topo++] = produto;
-        
+    }
+
+    // pre condições: o carrinho nao pode esta vazio
+    public Produto remover(){
+        if (estaVazio()){
+            System.out.println("Carrinho vazio");
+            return null;
+        }
+
+        Produto produtoRemovido = carrinho[--topo];
+        return produtoRemovido;
+    }
+
+    public void listarProduto(){
+        for(int i=0; i < topo; i++){
+            carrinho[i].mostrar();
+        }
     }
 }
