@@ -38,7 +38,7 @@ public class Carrinho {
             return;
         }
 
-        if (!produto.produtoValido()){
+        if (produto.produtoValido()){
             System.out.println("Produto Invalido");
             return;
         }
@@ -58,8 +58,10 @@ public class Carrinho {
     }
 
     public void listarProduto(){
+        System.out.println("______________");
         for(int i=0; i < topo; i++){
             carrinho[i].mostrar();
         }
+        System.out.println("______________");
     }
 }

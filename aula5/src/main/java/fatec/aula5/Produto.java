@@ -13,7 +13,7 @@ public class Produto {
 
     public void mostrar(){
         System.out.println("Nome: "+nome);
-        System.out.println("Preço: "+preco);
+        System.out.println("Preco: "+preco);
         System.out.println("Tipo do produto: "+tipoProduto);
     }
 
