@@ -21,4 +21,12 @@ public class Produto {
         return !nome.equals(nome) && preco > 0 && nome != null;
     }
 
+    public double pegaPreco(){
+        return preco;
+    }
+
+    public TipoProduto pegaTipo(){
+        return tipoProduto;
+    }
+
 }

@@ -24,5 +24,7 @@ public class Aula5 {
         c.inserir(p5);
         c.inserir(p1);
         c.listarProduto();
+        c.calcularTotal();
+        c.calcularTotalTipo(TipoProduto.ALIMENTACAO);
     }
 }
