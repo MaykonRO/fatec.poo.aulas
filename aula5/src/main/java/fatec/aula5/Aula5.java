@@ -24,7 +24,11 @@ public class Aula5 {
         c.inserir(p5);
         c.inserir(p1);
         c.listarProduto();
-        c.calcularTotal();
-        c.calcularTotalTipo(TipoProduto.ALIMENTACAO);
+        double total = c.calcularTotal();
+        TipoProduto meuTipo = TipoProduto.ALIMENTACAO;
+        double totalTipo = c.calcularTotalTipo(meuTipo);
+
+        System.out.println("Total: R$"+ total);
+        System.out.println("Total por tipo "+meuTipo+": R$"+ totalTipo);
     }
 }

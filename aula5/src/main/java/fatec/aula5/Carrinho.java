@@ -64,22 +64,22 @@ public class Carrinho {
     }
 
     
-    public void calcularTotal(){
+    public double calcularTotal(){
         double total = 0;
         for (int i = 0; i < topo; i++) {
             total += carrinho[i].pegaPreco();        
         }
-        System.out.println("Total: R$"+ total);
+        return total;
     }
 
-    public void calcularTotalTipo(TipoProduto tipo){
+    public double calcularTotalTipo(TipoProduto tipo){
         double total = 0;
         for (int i = 0; i < topo; i++) {
             if (tipo == carrinho[i].pegaTipo()){
                 total += carrinho[i].pegaPreco();        
             }
         }
-        System.out.println("Total por tipo "+tipo+": R$"+ total);
+        return total;
     }
 
     
