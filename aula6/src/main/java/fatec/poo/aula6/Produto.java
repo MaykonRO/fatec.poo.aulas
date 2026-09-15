@@ -22,7 +22,7 @@ public class Produto {
     }
 
     public boolean produtoValido() {
-        return !nome.equals(nome) && preco > 0 && nome != null;
+        return !nome.equals("") && preco > 0 && nome != null;
     }
 
     public double pegaPreco() {
