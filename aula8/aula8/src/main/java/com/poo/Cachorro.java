@@ -14,8 +14,9 @@ public class Cachorro extends Animal {
         super(nome);
     }
 
-    public void latir(){
-        System.out.println(getNome() + ": AUAU");
+    @Override 
+    public void emitirSom(){
+        System.out.println(getNome() + "AUAU");
     }
 
 }
