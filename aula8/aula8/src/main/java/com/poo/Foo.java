@@ -11,12 +11,21 @@ package com.poo;
  */
 public class Foo {
 
+    //LP=[]
     public void algo(){
         System.out.println("algo sem parametro");
     }
 
+
+    // LP=[ int ]
     public void algo(int x){
         System.out.println("algo com 1 parametro: "+ x);
     }
+
+    /* Não compila, pois a lista de paramentros  e' exatamente a mesma
+    public void algo(int x){
+        System.out.println("algo com 1 parametro: "+ x);
+    }
+    */
 
 }
