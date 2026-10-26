@@ -1,8 +1,5 @@
 package com.poo;
 
-/**
- * @author lab53
- */
 public class Gato extends Animal {
 
     public Gato(String nome) {
