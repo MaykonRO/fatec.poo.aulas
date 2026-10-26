@@ -22,7 +22,12 @@ public class Cachorro extends Animal implements Brincavel, Nadavel {
     }
 
     @Override
-    public void Nadar() {
+    public void nadar() {
         System.out.println("Nadou cachorrinho");
+    }
+
+    @Override
+    public void foo() {
+        System.out.println("Override em cachorro");
     }
 }

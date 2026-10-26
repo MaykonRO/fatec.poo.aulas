@@ -18,4 +18,8 @@ public class Gato extends Animal implements Brincavel {
     public void brincar() {
         System.out.println("BRINCOU COM O GATO");
     }
+
+    public void ronrronar(){
+        System.out.println("Purl");
+    }
 }
